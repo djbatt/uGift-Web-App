@@ -42,15 +42,7 @@ export default class wideNav extends Component {
             })
             break;
         }
-      console.log(this.props.path)
     }
-
-    componentDidUpdate(prevProps, prevState) {
-        console.log(this.props.path)
-        
-    }
-    
-    
 
     handleItemClick = (e, { name }) => this.setState({ activeItem: name }, () => {
         console.log(this.state);
