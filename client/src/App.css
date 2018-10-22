@@ -1,0 +1,49 @@
+.okta-sign-in-header {
+    display: none !important;
+}
+
+.auth-container {
+    -webkit-box-shadow: 0px 2px 4px 0px rgba(34, 36, 38, 0.12), 0px 2px 10px 0px rgba(34, 36, 38, 0.15) !important;
+    box-shadow: 0px 2px 4px 0px rgba(34, 36, 38, 0.12), 0px 2px 10px 0px rgba(34, 36, 38, 0.15) !important;
+}
+
+.menuButton {
+    margin-right: 14px !important;
+}
+
+.createBusinessCheck {
+    margin: 5px 0px 5px 7px;
+}
+
+.sidebar.menu {
+    width: 50% !important;
+}
+
+.burgerDiv {
+    width: 36px;
+    margin: 0px 0px 0px 0px !important;
+}
+
+.giftContainer {
+    margin: 3% 0px 3% 0px;
+}
+
+.imageColumn {
+    padding: 14px 7px 14px 7px !important;
+}
+
+.dashLogoWide {
+    margin: 2rem auto !important; 
+}
+
+.picker {
+    margin-right: 0px !important;
+}
+
+.burgerSlot {
+    padding: 0px !important;
+}
+
+/* 
+    -webkit-box-shadow: 0px 2px 4px 0px rgba(34, 36, 38, 0.12), 0px 2px 10px 0px rgba(34, 36, 38, 0.15) !important;
+    box-shadow: 0px 2px 4px 0px rgba(34, 36, 38, 0.12), 0px 2px 10px 0px rgba(34, 36, 38, 0.15) !important; */
