@@ -4,6 +4,7 @@ const mongoose = require("mongoose");
 const routes = require("./routes");
 const app = express();
 const PORT = process.env.PORT || 3001;
+require('dotenv').config()
 
 // Define middleware here
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -14,8 +15,8 @@ if (process.env.NODE_ENV === "production") {
 }
 
 app.use(routes);
-
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/ezGift");
+console.log(process.env.MONGODB_URL)
+mongoose.connect(process.env.MONGODB_URL);
 
 app.listen(PORT, function() {
   console.log(`🌎 ==> Server now on port ${PORT}!`);

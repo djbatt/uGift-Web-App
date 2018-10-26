@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 import { Menu, Icon } from 'semantic-ui-react';
 
 export default class wideNav extends Component {
@@ -44,9 +45,9 @@ export default class wideNav extends Component {
         }
     }
 
-    handleItemClick = (e, { name }) => this.setState({ activeItem: name }, () => {
-        console.log(this.state);
-    })
+    handleItemClick = (e, { name }) => {
+        this.setState({ activeItem: name })
+    }
 
     render() {
 

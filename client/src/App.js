@@ -8,17 +8,22 @@ import Home from './components/pages/home/home';
 import Dashboard from './components/pages/dashboard/dashboard';
 import Login from './components/pages/login/login';
 
+import { Provider } from 'react-redux';
+import store from './components/util/store/index';
+
 export default class App extends Component {
   render() {
     return (
-      <Router>
-        <Switch>
-          <Route path='/dashboard' exact={false} component={Dashboard} />
-          <Route path='/' exact={true} component={Home} />
-          <Route path='login' exact={true} component={Login}/>
-          <Route component={NotFound} />
-        </Switch>
-      </Router>
+      <Provider store={store}>
+        <Router>
+          <Switch>
+            <Route path='/dashboard' exact={false} component={Dashboard} />
+            <Route path='/' exact={true} component={Home} />
+            <Route path='login' exact={true} component={Login} />
+            <Route component={NotFound} />
+          </Switch>
+        </Router>
+      </Provider>
     )
   }
 }

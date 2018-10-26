@@ -1,5 +1,4 @@
 module.exports = {
-    User: require("./user"),
-    Business: require('./business')
+    Business: require('./business'),
 };
   
