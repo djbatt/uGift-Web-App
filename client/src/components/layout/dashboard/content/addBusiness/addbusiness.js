@@ -1,5 +1,6 @@
 import React from 'react'
 import { Grid, Segment, Form, Input, Button, Header } from 'semantic-ui-react';
+import List from './busList';
 
 // Name of Business
 // Street Address
@@ -43,6 +44,8 @@ export default function addbusiness(props) {
           </Segment>
 
         </Segment.Group>
+
+        <List/>
 
       </Grid.Column>
     </Grid>

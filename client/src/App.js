@@ -11,6 +11,12 @@ import Login from './components/pages/login/login';
 import { Provider } from 'react-redux';
 import store from './components/util/store/index';
 
+console.log(store.getState());
+
+store.subscribe(() => {
+  console.log(store.getState());
+})
+
 export default class App extends Component {
   render() {
     return (
