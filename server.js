@@ -14,8 +14,9 @@ if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
 }
 
+console.log(process.env.REACT_APP_OKTA_ISSUER)
+
 app.use(routes);
-console.log(process.env.MONGODB_URL)
 mongoose.connect(process.env.MONGODB_URL);
 
 app.listen(PORT, function() {
