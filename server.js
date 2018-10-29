@@ -1,10 +1,14 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
+const passport = require('passport');
 const routes = require("./routes");
 const app = express();
 const PORT = process.env.PORT || 3001;
 require('dotenv').config()
+
+app.use(passport.initialize());
+app.use(passport.session());
 
 // Define middleware here
 app.use(bodyParser.urlencoded({ extended: true }));
