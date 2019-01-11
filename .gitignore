@@ -8,6 +8,9 @@
 # production
 /build
 
+
+.elasticbeanstalk/
+
 # misc
 reactReadMe.md
 
